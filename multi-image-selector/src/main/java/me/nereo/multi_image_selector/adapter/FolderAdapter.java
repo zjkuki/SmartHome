@@ -79,7 +79,8 @@ public class FolderAdapter extends BaseAdapter {
                 holder.size.setText(getTotalImageSize()+"张");
                 if(mFolders.size()>0){
                     Folder f = mFolders.get(0);
-                    Picasso.with(mContext)
+                    //Picasso.with(mContext)
+                    Picasso.get()
                             .load(new File(f.cover.path))
                             .error(R.drawable.default_error)
                             .resize(mImageSize, mImageSize)
@@ -136,7 +137,8 @@ public class FolderAdapter extends BaseAdapter {
             name.setText(data.name);
             size.setText(data.images.size()+"张");
             // 显示图片
-            Picasso.with(mContext)
+            //Picasso.with(mContext)
+            Picasso.get()
                     .load(new File(data.cover.path))
                     .placeholder(R.drawable.default_error)
                     .resize(mImageSize, mImageSize)

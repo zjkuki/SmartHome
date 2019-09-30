@@ -238,7 +238,8 @@ public class ImageGridAdapter extends BaseAdapter {
 
             if(mItemSize > 0) {
                 // 显示图片
-                Picasso.with(mContext)
+                //Picasso.with(mContext)
+                Picasso.get()
                         .load(imageFile)
                         .placeholder(R.drawable.default_error)
                                 //.error(R.drawable.default_error)

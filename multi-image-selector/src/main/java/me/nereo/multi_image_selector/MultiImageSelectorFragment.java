@@ -187,7 +187,8 @@ public class MultiImageSelectorFragment extends Fragment {
             @Override
             public void onScrollStateChanged(AbsListView absListView, int state) {
 
-                final Picasso picasso = Picasso.with(getActivity());
+                //final Picasso picasso = Picasso.with(getActivity());
+                final Picasso picasso = Picasso.get();
                 if(state == SCROLL_STATE_IDLE || state == SCROLL_STATE_TOUCH_SCROLL){
                     picasso.resumeTag(getActivity());
                 }else{

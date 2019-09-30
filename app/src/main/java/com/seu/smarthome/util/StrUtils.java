@@ -21,7 +21,7 @@ public final class StrUtils {
 
 
     /** ####################### URLs ############################### **/
-    private static final String BASE_URL = "http://115.28.190.18:8080/";
+    private static final String BASE_URL = "http://localhost:32770/";
 
     private static final String BASE_URL_NGINX = "http://115.28.190.18/";
 
